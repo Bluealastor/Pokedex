@@ -8,7 +8,6 @@ const [allPokemons,setAllPokemons] = useState([]);
 const getAllPokemons = async () => {
     const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=649&offset=0");
     const data = await res.json();
-
     const createPokemonObject = (results) => {
         results.forEach(async (pokemon) => {
             const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`);
