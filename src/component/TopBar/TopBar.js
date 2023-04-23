@@ -11,7 +11,7 @@ export const TopBar = () => {
                 <div className='caught-seen'>
                     <div className='caught'>
                         <img src={pokeballColor} alt='pokemoncolor' style={{width: '25.5px', marginRight:'10px'}}/>
-                        <p>438</p>
+                        <p>649</p>
 
                     </div>
                     <div className='seen'>
@@ -20,7 +20,7 @@ export const TopBar = () => {
                     </div>
                 </div>
             </div>
-            <p style={{color:"white"}}>A -8gt; Z</p>
+            <p style={{color:"white"}}>Christian Pokedex</p>
         </div>
     )
 
