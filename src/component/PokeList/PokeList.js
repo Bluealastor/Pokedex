@@ -1,8 +1,8 @@
 import "./pokeList.css"
-import { useEffect, useState } from 'react';
+import { useEffect, useState,} from 'react';
 import { PokemonCard } from "../PokemonCard/PokemonCard";
 
-export const PokeList = () => {
+export const PokeList = (user) => {
 const [allPokemons,setAllPokemons] = useState([]);
 
 const getAllPokemons = async () => {
@@ -23,8 +23,7 @@ const getAllPokemons = async () => {
 useEffect(() => {
     getAllPokemons();
     // console.log(allPokemons)
-    
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
 },[])
 
     return(
