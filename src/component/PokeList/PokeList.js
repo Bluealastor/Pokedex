@@ -23,6 +23,8 @@ const getAllPokemons = async () => {
 useEffect(() => {
     getAllPokemons();
     // console.log(allPokemons)
+    
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 },[])
 
     return(
